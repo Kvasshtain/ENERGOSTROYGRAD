@@ -1,6 +1,12 @@
 {
-    "index": "На главную",
     "about": "О нас",
     "services": "Услуги",
-    "contacts": "Контакты"
+    "contacts": "Контакты",
+    "ourWork": "Наши работы",
+    "organizationName": "ЭНЕРГОСТРОЙГРАД",
+    "generalDirectorFullName": "Волков Роман Сергеевич",
+    "companyAddress": "410018, г. Саратов, ул. Исаева, дом 6, кв. 43",
+    "phoneNumber" : "тел. (986) 9-888-015",
+    "emailAddress" : "Energostroygrad@gmail.com",
+    "servicesString" : "Перечень предлагаемых услуг:"
 }

@@ -9,6 +9,7 @@
   -webkit-background-size: 150%;
   -o-background-size: 150%;
   background-size: 150%;
+  z-index: -1000;
 }
 
 .NavigationPanel {
@@ -32,12 +33,31 @@
   text-decoration: none;
   font: 15pt/10pt bold;
   font-family: 'Lora', serif;
-  /*transition: .5s linear;*/
   padding: 0.3em;
-  width: 120px;
-  background: rgba(255, 255, 255, .5);
+  width: 130px;
+  background: rgba(255, 255, 255, .8);
   border: 1px solid #b19891;
   color: darkmagenta;
+}
+
+
+.PageContent {
+  font-family: 'Lora', serif;
+  margin: 100px 5px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, .8);
+}
+
+.PageContent h1 {
+  text-align: center;
+  font: 30pt/20pt bold;
+}
+
+.PageContent p, li {
+  font: 20pt/10pt bold;
+  line-height: 30pt;
+  text-align: justify;
+  text-indent: 20pt;
 }
 
 
