@@ -17,7 +17,11 @@ const NavigationPanel = () => {
                         <button>{textStrings.services}</button>
                     </Link>
                 </li>
-                <li><button>{textStrings.contacts}</button></li>
+                <li>
+                    <Link to = '/contacts'>
+                        <button>{textStrings.contacts}</button>
+                    </Link>
+                </li>
                 <li><button>{textStrings.ourWork}</button></li>
             </ul>
         </nav>

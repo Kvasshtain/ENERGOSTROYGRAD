@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { NavigationPanel } from './components/NavigationPanel'
 import { About } from './components/About'
-import { Services } from "./components/Services"
+import { Services } from './components/Services'
+import { Contacts } from './components/Contacts'
 
 import './App.css';
 
@@ -18,11 +19,13 @@ class App extends Component {
                         <Route path = '/about' children = {()=> (
                             <About/>
                         )}/>
-                    </Switch>
                         <Route path = '/services' children = {() => (
                             <Services/>
                         )}/>
-                    <Switch/>
+                        <Route path = '/contacts' children = {() => (
+                            <Contacts/>
+                        )}/>
+                    </Switch>
                 </React.Fragment>
             </BrowserRouter>
 

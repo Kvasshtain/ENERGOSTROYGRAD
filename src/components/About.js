@@ -19,13 +19,11 @@ class About extends React.Component {
             <div class = "PageContent">
                 <h1>{textStrings.organizationName}</h1>
                 <div class = "PageBlock">
-                    <span>
-                        <p>{aboutPageContent.mainContent1}</p>
-                        <p>{aboutPageContent.mainContent2}</p>
-                        <ul>
-                            {this.renderAchievementList()}
-                        </ul>
-                    </span>
+                    <p>{aboutPageContent.mainContent1}</p>
+                    <p>{aboutPageContent.mainContent2}</p>
+                    <ul>
+                        {this.renderAchievementList()}
+                    </ul>
                 </div>
             </div>
         )
