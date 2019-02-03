@@ -27,38 +27,50 @@
 
 .NavigationPanel button {
   text-decoration: none;
-  font: 15pt/10pt bold;
-  font-family: 'Lora', serif;
+  font: normal 17px Courier;
+  font-weight: bold;
   padding: 0.3em;
-  width: 130px;
+  width: 128px;
   background: rgba(255, 255, 255, .8);
   border: 1px solid #b19891;
   color: darkmagenta;
 }
 
-
 .PageContent {
-  font-family: 'Lora', serif;
   margin: 100px 5px auto;
   padding: 20px;
   background: rgba(255, 255, 255, .8);
 }
 
 .PageContent h1 {
+  font: normal 50px Courier;
+  font-weight: bold;
   text-align: center;
-  font: 30pt/20pt bold;
+}
+
+@media (max-width: 510px){
+    .PageContent h1{
+        font: normal 20px Courier;
+        font-weight: bold;
+    }
 }
 
 .PageContent p, li {
-  font: 20pt/10pt bold;
-  line-height: 30pt;
+  font: normal 23px Arial;
+  line-height: 30px;
   text-align: justify;
   text-indent: 20pt;
 }
 
+@media (max-width: 510px){
+    .PageContent p, li {
+        font: normal 12px Arial;
+        line-height: 15px;
+        text-indent: 5pt;
+    }
+}
+
 .ImageContainer {
-  /*background-color: red;*/
-  /*border: 5px double black;*/
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -104,45 +116,40 @@
   position: absolute;
 }
 
-/*.BigImageContainer > .CloseReview{*/
-  /*right: 0;*/
-  /*top: 0;*/
-/*}*/
-
-/*.BigImageContainer > .GoPrevious{*/
-  /*left: 0;*/
-  /*bottom: 0;*/
-/*}*/
-
-/*.BigImageContainer > .GoNext{*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-/*}*/
-
 .Icon {
   position: absolute;
   width: 50px;
   height: 50px;
   float: left;
-  background: rgba(255, 255, 255, .5) url(data/icons/icons.png) no-repeat;
+  background: rgba(255, 255, 255, .0) url(data/icons/icons.png) no-repeat;
 }
 
 .Icon.CloseReview {
-  background-position: 0 -50px; /* вверх на 16px */
+  background-position: 0 -50px;
   cursor: pointer;
   top: 5%;
   right: 10%;
 }
 
 .Icon.GoPrevious {
-  background-position: 0 0; /* по умолчанию */
+  background-position: 0 0;
   cursor: pointer;
   top: 50%;
   left: 10%;
 }
 
+@media (max-width: 500px){
+    .GoPrevious, .GoNext {
+        opacity: 0;
+    }
+
+    .GoPrevious:hover, .GoNext:hover {
+        opacity: 1;
+    }
+}
+
 .Icon.GoNext {
-  background-position: -50px 0; /* вверх на 32px */
+  background-position: -50px 0;
   cursor: pointer;
   top: 50%;
   right: 10%;
