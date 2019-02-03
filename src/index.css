@@ -1,14 +1,10 @@
-.Background {
+.BackgroundImage {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(resources/powerLines.jpg) no-repeat;
-  -moz-background-size: 150%;
-  -webkit-background-size: 150%;
-  -o-background-size: 150%;
-  background-size: 150%;
+  height: 110%;
+  width: auto;
   z-index: -1000;
 }
 
@@ -60,4 +56,94 @@
   text-indent: 20pt;
 }
 
+.ImageContainer {
+  /*background-color: red;*/
+  /*border: 5px double black;*/
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
 
+.ImageContainer > img{
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.BigImageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  background: url(resources/powerLines.jpg) no-repeat;
+  -moz-background-size: 300%;
+  -webkit-background-size: 300%;
+  -o-background-size: 300%;
+  background-size: 300%;
+}
+
+.BigImageContainer > img{
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.BigImageContainer > button{
+  position: absolute;
+}
+
+/*.BigImageContainer > .CloseReview{*/
+  /*right: 0;*/
+  /*top: 0;*/
+/*}*/
+
+/*.BigImageContainer > .GoPrevious{*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+/*}*/
+
+/*.BigImageContainer > .GoNext{*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+/*}*/
+
+.Icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: rgba(255, 255, 255, .5) url(data/icons/icons.png) no-repeat;
+}
+
+.Icon.CloseReview {
+  background-position: 0 -50px; /* вверх на 16px */
+  cursor: pointer;
+  top: 5%;
+  right: 10%;
+}
+
+.Icon.GoPrevious {
+  background-position: 0 0; /* по умолчанию */
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+}
+
+.Icon.GoNext {
+  background-position: -50px 0; /* вверх на 32px */
+  cursor: pointer;
+  top: 50%;
+  right: 10%;
+}

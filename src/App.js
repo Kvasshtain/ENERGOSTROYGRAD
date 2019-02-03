@@ -5,6 +5,9 @@ import { NavigationPanel } from './components/NavigationPanel'
 import { About } from './components/About'
 import { Services } from './components/Services'
 import { Contacts } from './components/Contacts'
+import { OurWorks } from "./components/OurWorks"
+
+import backgroundImage from './resources/powerLines.jpg'
 
 import './App.css';
 
@@ -13,7 +16,11 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <React.Fragment>
-                    <div class = "Background"></div>
+                    <img
+                        className = "BackgroundImage"
+                        src = {backgroundImage}
+                        alt="img"
+                    />
                     <NavigationPanel></NavigationPanel>
                     <Switch>
                         <Route path = '/about' children = {()=> (
@@ -24,6 +31,9 @@ class App extends Component {
                         )}/>
                         <Route path = '/contacts' children = {() => (
                             <Contacts/>
+                        )}/>
+                        <Route path = '/ourWorks' children = {() => (
+                            <OurWorks/>
                         )}/>
                     </Switch>
                 </React.Fragment>

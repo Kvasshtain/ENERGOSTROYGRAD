@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import textStrings from '../data/textStrings.json'
 
 const NavigationPanel = () => {
     return (
-        <nav class = "NavigationPanel">
-            <ul class = "HorizontalPanel">
+        <nav className = "NavigationPanel">
+            <ul className = "HorizontalPanel">
                 <li>
                     <Link to = '/about'>
                         <button>{textStrings.about}</button>
@@ -22,10 +22,14 @@ const NavigationPanel = () => {
                         <button>{textStrings.contacts}</button>
                     </Link>
                 </li>
-                <li><button>{textStrings.ourWork}</button></li>
+                <li>
+                    <Link to = '/ourWorks'>
+                        <button>{textStrings.ourWorks}</button>
+                    </Link>
+                </li>
             </ul>
         </nav>
     )
 }
 
-export { NavigationPanel }
+export {NavigationPanel}

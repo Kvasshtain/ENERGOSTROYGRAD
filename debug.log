@@ -1,0 +1,4 @@
+[0112/201131.610:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name prod, discarding value OperaDesktop
+[0112/201131.884:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name ver, discarding value 57.0.3098.106
+[0112/201131.884:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name channel, discarding value Stable
+[0112/201131.884:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name ptype, discarding value gpu-process
