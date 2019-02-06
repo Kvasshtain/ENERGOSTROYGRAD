@@ -2,7 +2,7 @@
   "name": "electric_company",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Kvasshtain.github.io/energostroygrad",
+  "homepage": "http://Kvasshtain.github.io/energostroygrad/build",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
