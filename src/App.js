@@ -16,11 +16,6 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <React.Fragment>
-                    <img
-                        className = "BackgroundImage"
-                        src = {backgroundImage}
-                        alt="img"
-                    />
                     <NavigationPanel></NavigationPanel>
                     <Switch>
                         <Route path = '/about' children = {()=> (

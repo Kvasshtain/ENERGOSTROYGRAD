@@ -29,7 +29,7 @@ class Gallery extends React.Component {
     bigImageGoPrevious = () => {
 
         const { imagesArray } = this.props,
-            maxImagesCount = imagesArray.length - 1;
+            maxImagesCount = imagesArray.length;
 
         let currentImageIndex = this.state.bigImageIndex - 1;
 
@@ -45,7 +45,7 @@ class Gallery extends React.Component {
 
     bigImageGoNext = () => {
         const { imagesArray } = this.props,
-              maxImagesCount = imagesArray.length - 1;
+              maxImagesCount = imagesArray.length;
 
         let currentImageIndex = this.state.bigImageIndex + 1;
 
