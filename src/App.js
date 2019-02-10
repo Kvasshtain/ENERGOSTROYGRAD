@@ -7,8 +7,6 @@ import { Services } from './components/Services'
 import { Contacts } from './components/Contacts'
 import { OurWorks } from "./components/OurWorks"
 
-import backgroundImage from './resources/powerLines.jpg'
-
 import './App.css';
 
 class App extends Component {

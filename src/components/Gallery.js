@@ -33,7 +33,7 @@ class Gallery extends React.Component {
 
         let currentImageIndex = this.state.bigImageIndex - 1;
 
-        if (currentImageIndex == -1)
+        if (currentImageIndex === -1)
             currentImageIndex = maxImagesCount - 1;
 
         this.setState(
@@ -49,7 +49,7 @@ class Gallery extends React.Component {
 
         let currentImageIndex = this.state.bigImageIndex + 1;
 
-        if (currentImageIndex == maxImagesCount)
+        if (currentImageIndex === maxImagesCount)
             currentImageIndex = 0;
 
         this.setState(
@@ -67,6 +67,7 @@ class Gallery extends React.Component {
             return imagesArray.map(function (item, i) {
                 return (
                     <ImageContainer
+                        key = {i}
                         imageIndex = {i}
                         id = {item.id}
                         image = {item.image}
@@ -83,8 +84,8 @@ class Gallery extends React.Component {
     }
 
     renderBigImage = () => {
-        const { imagesArray } = this.props,
-              bigImageIndex = this.state.bigImageIndex
+        const bigImageIndex = this.state.bigImageIndex,
+              bigImageDir = this.props.bigImageDir
 
         if (bigImageIndex !== null) {
             return (
@@ -92,7 +93,8 @@ class Gallery extends React.Component {
                     onCloseReview = {this.bigImageCloseClick}
                     onGoPrevious = {this.bigImageGoPrevious}
                     onGoNext = {this.bigImageGoNext}
-                    image = {imagesArray[bigImageIndex].image}/>
+                    imageIndex = {bigImageIndex}
+                    bigImageDir = {bigImageDir}/>
             )
         }
     }

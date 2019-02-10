@@ -22,7 +22,7 @@ body {
 
 .NavigationPanel button {
     text-decoration: none;
-    font: normal 17px Courier;
+    font: normal 15px Arial;
     font-weight: bold;
     padding: 0.3em;
     width: 128px;
@@ -71,16 +71,16 @@ body {
 }
 
 .ImageContainer > img{
-    height: 230px;
+    /*height: 230px;*/
     max-width: 100%;
     display: block;
 }
 
-@media (max-width: 450px) {
-    .ImageContainer > img{
-        height: 250px;
-    }
-}
+/*@media (max-width: 450px) {*/
+    /*.ImageContainer > img{*/
+        /*height: 250px;*/
+    /*}*/
+/*}*/
 
 .BigImageContainer {
     position: fixed;

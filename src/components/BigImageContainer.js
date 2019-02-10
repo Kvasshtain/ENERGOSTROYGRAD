@@ -1,5 +1,4 @@
 import React from 'react'
-import textStrings from '../data/textStrings.json'
 
 class BigImageContainer extends React.Component {
 
@@ -16,10 +15,16 @@ class BigImageContainer extends React.Component {
     }
 
     render() {
+        const //bigImageDir = this.props.bigImageDir,
+              imageIndex = this.props.imageIndex
+              //imageResolution = '.jpg',
+              //image = bigImageDir + imageIndex + imageResolution
+
         return (
             <div className = "BigImageContainer">
                 <img
-                    src = { this.props.image }
+                    src = {require('../data/images/big/' + imageIndex + '.jpg')}
+                    //src = {require(image)} // It doesn't work! https://github.com/webpack/webpack/issues/6680
                     alt="img"
                     onClick = { this.imageClick }
                 />

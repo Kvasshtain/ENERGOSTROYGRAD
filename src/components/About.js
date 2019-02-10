@@ -5,9 +5,9 @@ import aboutPageContent from '../data/aboutPageContent'
 class About extends React.Component {
 
     renderAchievementList = () => {
-        return aboutPageContent.achievements.map(function(item) {
+        return aboutPageContent.achievements.map(function(item, index) {
             return (
-                <li>
+                <li key = {index}>
                     {item}
                 </li>
             )
@@ -16,9 +16,9 @@ class About extends React.Component {
 
     render() {
         return (
-            <div class = "PageContent">
+            <div className = "PageContent">
                 <h1>{textStrings.organizationName}</h1>
-                <div class = "PageBlock">
+                <div className = "PageBlock">
                     <p>{aboutPageContent.mainContent1}</p>
                     <p>{aboutPageContent.mainContent2}</p>
                     <ul>

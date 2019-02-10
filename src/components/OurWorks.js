@@ -1,6 +1,8 @@
 import React from 'react'
 import { Gallery } from './Gallery'
-const images = require.context('../data/images/', true, /\.jpg$/)
+const images = require.context('../data/images/small', true, /\.jpg$/),
+      bigImageDir = '../data/images/big/';
+
 const imagesArray = images.keys()
     .map(key => {
         return {
@@ -15,7 +17,7 @@ class OurWorks extends React.Component {
 
         return (
             <div className="PageContent">
-                <Gallery imagesArray = {imagesArray}/>
+                <Gallery imagesArray = {imagesArray} bigImageDir = {bigImageDir}/>
             </div>
         )
     }

@@ -5,7 +5,7 @@ class Services extends React.Component {
 
     render() {
         return (
-            <div class = "PageContent">
+            <div className = "PageContent">
                 <h1>{textStrings.servicesString}</h1>
             </div>
         )
