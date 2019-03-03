@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/energostroygrad/precache-manifest.cdef8751905b6cfec1d0ef1ede0336ac.js"
+  "/energostroygrad/precache-manifest.dc803286aecd87771a0edfd5cae441c0.js"
 );
 
 workbox.clientsClaim();

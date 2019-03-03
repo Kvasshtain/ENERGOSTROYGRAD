@@ -1,7 +1,7 @@
 {
   "main.css": "/energostroygrad/static/css/main.b869aa16.chunk.css",
-  "main.js": "/energostroygrad/static/js/main.fd4e8c24.chunk.js",
-  "main.js.map": "/energostroygrad/static/js/main.fd4e8c24.chunk.js.map",
+  "main.js": "/energostroygrad/static/js/main.c0057a9c.chunk.js",
+  "main.js.map": "/energostroygrad/static/js/main.c0057a9c.chunk.js.map",
   "static/js/1.b2cebb15.chunk.js": "/energostroygrad/static/js/1.b2cebb15.chunk.js",
   "static/js/1.b2cebb15.chunk.js.map": "/energostroygrad/static/js/1.b2cebb15.chunk.js.map",
   "runtime~main.js": "/energostroygrad/static/js/runtime~main.079a6faa.js",
@@ -15,6 +15,6 @@
   "static/media/0.jpg": "/energostroygrad/static/media/0.b1a98962.jpg",
   "static/css/main.b869aa16.chunk.css.map": "/energostroygrad/static/css/main.b869aa16.chunk.css.map",
   "index.html": "/energostroygrad/index.html",
-  "precache-manifest.cdef8751905b6cfec1d0ef1ede0336ac.js": "/energostroygrad/precache-manifest.cdef8751905b6cfec1d0ef1ede0336ac.js",
+  "precache-manifest.dc803286aecd87771a0edfd5cae441c0.js": "/energostroygrad/precache-manifest.dc803286aecd87771a0edfd5cae441c0.js",
   "service-worker.js": "/energostroygrad/service-worker.js"
 }
