@@ -28,7 +28,7 @@ class App extends Component {
                         <Route path = '/ourWorks' children = {() => (
                             <OurWorks/>
                         )}/>
-                        <Redirect from="/" exact to="/about" />
+                        <Redirect from="/energostroygrad" exact to="/about" />
                     </Switch>
                 </React.Fragment>
             </BrowserRouter>
