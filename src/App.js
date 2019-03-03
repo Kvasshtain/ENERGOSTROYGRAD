@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import { NavigationPanel } from './components/NavigationPanel'
 import { About } from './components/About'
@@ -28,6 +28,7 @@ class App extends Component {
                         <Route path = '/ourWorks' children = {() => (
                             <OurWorks/>
                         )}/>
+                        <Redirect from="/" exact to="/about" />
                     </Switch>
                 </React.Fragment>
             </BrowserRouter>
