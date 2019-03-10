@@ -31,8 +31,27 @@ body {
     color: darkmagenta;
 }
 
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+}
+
+.Footer p {
+    font: normal 20px Arial;
+    margin: 5px;
+}
+
+@media (max-width: 500px){
+    .Footer {
+        visibility: hidden;
+    }
+}
+
 .PageContent {
-    margin: 100px 5px auto;
+    margin: 100px 5px 100px;
     padding: 20px;
     background: rgba(255, 255, 255, .8);
 }
@@ -43,7 +62,11 @@ body {
     text-align: center;
 }
 
-@media (max-width: 510px){
+@media (max-width: 500px){
+    .PageContent {
+        margin: 100px 5px auto;
+    }
+
     .PageContent h1{
         font: normal 20px Courier;
         font-weight: bold;
@@ -71,16 +94,14 @@ body {
 }
 
 .ImageContainer > img{
-    /*height: 230px;*/
+    cursor: pointer;
     max-width: 100%;
     display: block;
 }
 
-/*@media (max-width: 450px) {*/
-    /*.ImageContainer > img{*/
-        /*height: 250px;*/
-    /*}*/
-/*}*/
+.ImageContainer > img:hover {
+    box-shadow: 0 0 10px 3px rgba(148, 0, 211, .3);
+}
 
 .BigImageContainer {
     position: fixed;
@@ -114,7 +135,13 @@ body {
     width: 50px;
     height: 50px;
     float: left;
-    background: rgba(255, 255, 255, .0) url(data/icons/icons.png) no-repeat;
+    background: rgba(255, 255, 255, .6) url(data/icons/icons.png) no-repeat;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .6);
+}
+
+.Icon:hover {
+    background: rgba(255, 255, 255, .8) url(data/icons/icons.png) no-repeat;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .8);
 }
 
 .Icon.CloseReview {

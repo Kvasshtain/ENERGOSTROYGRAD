@@ -6,6 +6,7 @@ import { About } from './components/About'
 import { Services } from './components/Services'
 import { Contacts } from './components/Contacts'
 import { OurWorks } from "./components/OurWorks"
+import { Footer} from "./components/Footer"
 
 import './App.css';
 
@@ -30,6 +31,7 @@ class App extends Component {
                         )}/>
                         <Redirect from="/energostroygrad" exact to="/about" />
                     </Switch>
+                    <Footer></Footer>
                 </React.Fragment>
             </BrowserRouter>
 
