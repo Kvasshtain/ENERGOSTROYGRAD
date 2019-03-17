@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/energostroygrad/static/media/4.c6f5a115.jpg"
   },
   {
-    "revision": "152c217f11abe97a9384",
-    "url": "/energostroygrad/static/css/main.8f784e0d.chunk.css"
+    "revision": "7a844f59b9a322edd57b",
+    "url": "/energostroygrad/static/css/main.a18ba4a7.chunk.css"
   },
   {
-    "revision": "21f2b8e62669d9971afa",
-    "url": "/energostroygrad/static/js/1.21f2b8e6.chunk.js"
+    "revision": "151dded002f71892f3df",
+    "url": "/energostroygrad/static/js/1.151dded0.chunk.js"
   },
   {
     "revision": "079a6faa1013ff5af2ec",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/energostroygrad/static/media/3.4cded91a.jpg"
   },
   {
-    "revision": "152c217f11abe97a9384",
-    "url": "/energostroygrad/static/js/main.152c217f.chunk.js"
+    "revision": "7a844f59b9a322edd57b",
+    "url": "/energostroygrad/static/js/main.7a844f59.chunk.js"
   },
   {
     "revision": "80b2c5fd9d982c6c629028a686027d7d",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/energostroygrad/static/media/5.16d386a3.jpg"
   },
   {
-    "revision": "15813c1ff66f6d607004380a9f9eb5db",
+    "revision": "d6a03c78fc048a86098653df2edd3c02",
     "url": "/energostroygrad/index.html"
   }
 ];
