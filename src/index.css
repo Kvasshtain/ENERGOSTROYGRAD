@@ -53,7 +53,7 @@ body {
 .PageContent {
     margin: 100px 5px 100px;
     padding: 20px;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .9);
 }
 
 .PageContent h1 {
@@ -73,7 +73,7 @@ body {
     }
 }
 
-.PageContent p, li {
+.PageContent > p, li {
     font: normal 23px Arial;
     line-height: 30px;
     text-align: justify;
@@ -81,7 +81,7 @@ body {
 }
 
 @media (max-width: 510px){
-    .PageContent p, li {
+    .PageContent > p, li {
         font: normal 12px Arial;
         line-height: 15px;
         text-indent: 5pt;
@@ -101,6 +101,20 @@ body {
 
 .ImageContainer > img:hover {
     box-shadow: 0 0 10px 3px rgba(148, 0, 211, .3);
+}
+
+.ImageContainer {
+    vertical-align: top;
+    padding: 16px;
+    background: rgba(255, 255, 255, .7);
+    height: 270px;
+}
+
+.ImageContainer p {
+    width: 200px;
+    height: auto;
+    font: normal 12px Arial;
+    text-align: center;
 }
 
 .BigImageContainer {

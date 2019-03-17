@@ -61,6 +61,7 @@ class Gallery extends React.Component {
 
     renderImagesTable = () => {
         const { imagesArray } = this.props,
+              { imagesDescriptions } = this.props,
               imageClick = this.imageClick
 
         if(imagesArray.length) {
@@ -72,6 +73,7 @@ class Gallery extends React.Component {
                         id = {item.id}
                         image = {item.image}
                         onClick = {imageClick}
+                        imageDescription = {imagesDescriptions[i]}
                     />
                 )
             })

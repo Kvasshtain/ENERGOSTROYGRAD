@@ -1,5 +1,7 @@
 import React from 'react'
 import { Gallery } from './Gallery'
+import pictureDescription from '../data/images/small/pictureDescription'
+
 const images = require.context('../data/images/small', true, /\.jpg$/),
       bigImageDir = '../data/images/big/';
 
@@ -11,13 +13,18 @@ const imagesArray = images.keys()
         }
     })
 
+const imagesDescriptions = pictureDescription.strings;
+
 class OurWorks extends React.Component {
 
     render() {
 
         return (
             <div className="PageContent">
-                <Gallery imagesArray = {imagesArray} bigImageDir = {bigImageDir}/>
+                <Gallery imagesArray = {imagesArray}
+                         bigImageDir = {bigImageDir}
+                         imagesDescriptions = {imagesDescriptions}
+                />
             </div>
         )
     }

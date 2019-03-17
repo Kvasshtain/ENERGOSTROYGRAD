@@ -7,13 +7,11 @@ const Contacts = () => {
             <div className="PageContent">
                 <h1>{textStrings.contacts}</h1>
                 <p>{contactsPageContent.businessType} {textStrings.organizationName}</p>
-                <div className="PageBlock">
-                    <p>{contactsPageContent.address}</p>
-                    <p>{contactsPageContent.bank}</p>
-                    <p>{contactsPageContent.bankCode}</p>
-                    <p>{contactsPageContent.CEO}</p>
-                    <p>{contactsPageContent.emale}</p>
-                </div>
+                <p>{contactsPageContent.address}</p>
+                <p>{contactsPageContent.bank}</p>
+                <p>{contactsPageContent.bankCode}</p>
+                <p>{contactsPageContent.CEO}</p>
+                <p>{contactsPageContent.emale}</p>
             </div>
         )
 }

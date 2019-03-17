@@ -16,15 +16,13 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className = "PageContent">
+            <div className="PageContent">
                 <h1>{textStrings.organizationName}</h1>
-                <div className = "PageBlock">
-                    <p>{aboutPageContent.mainContent1}</p>
-                    <p>{aboutPageContent.mainContent2}</p>
-                    <ul>
-                        {this.renderAchievementList()}
-                    </ul>
-                </div>
+                <p>{aboutPageContent.mainContent1}</p>
+                <p>{aboutPageContent.mainContent2}</p>
+                <ul>
+                    {this.renderAchievementList()}
+                </ul>
             </div>
         )
     }

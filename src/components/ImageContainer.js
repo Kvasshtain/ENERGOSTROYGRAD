@@ -7,16 +7,20 @@ class ImageContainer extends React.Component {
     }
 
     render() {
-        const { id, image } = this.props
+        const { id, image } = this.props,
+              { imageDescription } = this.props
 
         return (
-            <div className = "ImageContainer">
+            <div className="ImageContainer">
                 <img
-                    key = {id}
-                    src = { image }
+                    key={id}
+                    src={image}
                     alt="img"
-                    onClick = {this.imageClick}
+                    onClick={this.imageClick}
                 />
+                <p>
+                    {imageDescription}
+                </p>
             </div>
         )
     }

@@ -3,7 +3,7 @@ import contactsPageContent from '../data/contactsPageContent.json'
 
 const Footer = () => {
     return (
-        <footer class = "Footer">
+        <footer className = "Footer">
             <p>{contactsPageContent.address}</p>
             <p>{contactsPageContent.emale}</p>
         </footer>
